@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f2f2f2;
+margin:0;
+}
+
+header{
+background:#0c8db3;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+nav{
+background:#333;
+text-align:center;
+padding:10px;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.container{
+display:flex;
+justify-content:center;
+gap:40px;
+padding:40px;
+}
+
+.contact-info{
+background:white;
+padding:20px;
+width:250px;
+box-shadow:0 0 10px gray;
+}
+
+.contact-form{
+background:white;
+padding:20px;
+width:350px;
+box-shadow:0 0 10px gray;
+}
+
+input, textarea{
+width:100%;
+padding:10px;
+margin-top:10px;
+margin-bottom:15px;
+border:1px solid gray;
+border-radius:5px;
+}
+
+button{
+background:#0c8db3;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#066d8a;
+}
+
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Contact Us</h1>
+<p>We are here to help you plan your trip</p>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="destination.html">Destinations</a>
+<a href="booking.html">Booking</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+<div class="contact-info">
+<h3>Contact Information</h3>
+<p>📍 Pune, India</p>
+<p>📞 +91 9763471492</p>
+<p>📧 travel@gmail.com</p>
+</div>
+
+<div class="contact-form">
+<h3>Send Message</h3>
+
+<form 
+  action="https://formspree.io/f/xqeyrlnj" method="POST">
+
+  <label>Your Name:</label>
+  <input type="text" name="name" required>
+
+  <label>Your Email:</label>
+  <input type="email" name="email" required>
+
+  <label>Your Message:</label>
+  <textarea name="message" required></textarea>
+
+  <input type="hidden" name="_next" value="thankyou.html">
+
+  <button type="submit">Send</button>
+
+</form>
+</div>
+<footer>
+© Travel and Tourism Project
+</footer>
+
+</body>
+</html>
